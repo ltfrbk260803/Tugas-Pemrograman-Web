@@ -5,22 +5,25 @@
 </head>
 <body>
 	<h1>Form HTML</h1>
-	<p>Name: <input type="text" placeholder="Your Name" required></p>
-	<p>Gender: <input type="radio" name="gender">Man <input type="radio" name="gender">Woman</p>
-	<p>Address: <input type="text" placeholder="Your Address"></p>
-	<p>Country: 
-		<select>
-			<option>--Country--</option>
-			<option>Indonesia</option>
-			<option>Jepang</option>
-			<option>Konoha</option>
-			<option>Amegakure</option>
-			<option>Sunagakure</option>
-		</select>
-	</p>
-	<p>Email: <input type="text" placeholder="Your Email"></p>
-	<p>Photo: <input type="text" placeholder="Your Photo"> <input type="file"></p>
-	<p>Comment: <textarea cols="50" rows="5"></textarea> <input type="submit"></p>
-	<h2>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Form Registrasi</h2>
+	<form>
+		<p>Name: <input type="text" required pattern=".{8,}" title="Input Harus >= 8 Sayang!!!"  placeholder="Your Name"></p>
+		<p>Gender: <input type="radio" name="gender">Man <input type="radio" name="gender">Woman</p>
+		<p>Address: <input type="text" placeholder="Your Address"></p>
+		<p>Country: 
+			<select>
+				<option>--Country--</option>
+				<option>Indonesia</option>
+				<option>Jepang</option>
+				<option>Konoha</option>
+				<option>Amegakure</option>
+				<option>Sunagakure</option>
+			</select>
+		</p>
+		<p>Email: <input type="email" placeholder="Your Email"></p>
+		<p>Photo: <input type="text" placeholder="Your Photo"> <input type="file"></p>
+		<p>Comment: <textarea cols="50" rows="5"></textarea> <input type="submit"></p>
+		<h2>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Form Registrasi</h2>
+	</form>
+	
 </body>
 </html>
